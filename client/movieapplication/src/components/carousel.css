@@ -1,0 +1,58 @@
+.carousel-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.carousel-image-container{
+    width: 100%;
+    height: 100%;
+}
+.carousel-image{
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+}
+.carousel-content{
+    position: absolute;
+    width: 20rem;
+    margin: 2rem;
+    z-index: 9;
+}
+.movie-title{
+
+}
+.movie-description{
+
+}
+.movie-director{
+    
+}
+.explore-button{
+    background: #000000;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid gray;
+}
+.explore-button:hover{
+    background: slategray;
+    color: #ffffff;
+}
+.button-container{
+    position: absolute;
+    top: 18rem;
+    left: 10rem;
+    z-index: 9;
+}
+.previous-button, .next-button{
+    border: none;
+    background: transparent;
+}
+
+.previous, .next{
+    color: #ffffff;
+}
+.previous:hover, .next:hover{
+    background: slategray; 
+    border-radius: 1rem;   
+}
