@@ -33,9 +33,6 @@ const Header = () => {
             })
         }
         </div>
-        <div className="search-container">
-            <input className='search-bar' type="text" placeholder='Search'/>
-        </div>
     </div>
   )
 }
