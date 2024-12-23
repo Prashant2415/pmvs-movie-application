@@ -1,16 +1,10 @@
 import React from 'react'
 import {useNavigate} from "react-router-dom"
 import "./movies.css"
+import CardGrid from '../CommonComponents/CardGrid';
 const Movies = (props) => {
     console.log("props112 ", props?.props);
     const movieData = props?.props;
-    const navigate = useNavigate();
-    const handleView =(details)=>{
-        console.log(details);
-    }
-    const handleFavorite=()=>{
-        console.log("Favorite");
-    }
     return (
         <div className="movie-section">
             <div className="sorting-container">
@@ -23,25 +17,8 @@ const Movies = (props) => {
                     </button>
                 </div>
             </div>
-            <div className="movie-grid-container">
-                {movieData?.map((md, index) => {
-                    return (
-                        <div className="movie-grid" key={index}>
-                            <div className="card-container">
-                                <div className="card-image">
-                                    <img className='image' src={`src/images/${md?.poster}.jpg`} alt="image" />
-                                </div>
-                                <div className="card-details">
-                                    <p className='card-detail-title'>{md?.title}</p>
-                                </div>
-                                <div className="card-button">
-                                    <button className='card-button-view' onClick={()=>{handleView(md)}}>View</button>
-                                    <button className='card-button-favorite' onClick={handleFavorite}>Favorite</button>
-                                </div>
-                            </div>
-                        </div>
-                    )
-                })}
+            <div className="grid-movie-container">
+                <CardGrid movieData={movieData}/>
             </div>
         </div>
     )
