@@ -7,7 +7,7 @@ const CardGrid = (movieData, undefined) => {
     const navigate = useNavigate();
     const handleView = (details) => {
         console.log(details);
-        navigate("/movies", {state: {details, flag}})
+        navigate("/particular", {state: {details, flag}})
     }
     const handleFavorite = () => {
         console.log("Favorite");

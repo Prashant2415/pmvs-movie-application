@@ -5,6 +5,7 @@ import MovieItem from "./components/MovieItem"
 import "./index.css"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import axios from "axios"
+import ParticularMovie from "./components/ParticularMovie"
 function App() {
   const [movieItems, setMovieItems] = useState();
   const getAllMovieData = async () => {
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeTemplate/>}/>
         <Route path="/movies" element={<MovieItem props={movieItems}/>}/>
+        <Route path="/particular" element={<ParticularMovie/>}/>
       </Routes>
     </Router>
   )
