@@ -3,7 +3,7 @@
    background: #000000;
    color: #ffffff;
    padding: 0rem 2rem 1rem 1rem;
-   height: 28rem;
+   height: 26rem;
    font-family: "Iceland", serif;
    font-weight: 400;
    font-style: normal;
@@ -15,6 +15,8 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 10rem;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
  }
  .logo{
 

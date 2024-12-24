@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import CardGrid from '../CommonComponents/CardGrid';
 import { useLocation } from 'react-router-dom';
+import { BackButton } from '../CommonComponents/BackButton';
 
 const MovieItem = (props, undefined) => {
     console.log("prosp123 ",props.props)
@@ -12,11 +13,8 @@ const MovieItem = (props, undefined) => {
 
   return (
     <div className='movie-item-container'>
-        {flag === true ? (
-            <>Hello</>
-        ) : (
-            <CardGrid movieData={movieData}/>
-        )}
+      <BackButton/>
+      <CardGrid movieData={movieData}/> 
     </div>
   )
 }
