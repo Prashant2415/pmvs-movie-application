@@ -6,6 +6,7 @@ import "./index.css"
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import axios from "axios"
 import ParticularMovie from "./components/ParticularMovie"
+import FavoriteMovie from "./components/FavoriteMovie"
 function App() {
   const [movieItems, setMovieItems] = useState();
   const getAllMovieData = async () => {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<HomeTemplate/>}/>
         <Route path="/movies" element={<MovieItem props={movieItems}/>}/>
         <Route path="/particular" element={<ParticularMovie/>}/>
+        <Route path="/favorite" element={<FavoriteMovie/>}/>
       </Routes>
     </Router>
   )

@@ -81,6 +81,7 @@
     flex-wrap: wrap;
     align-items: center;
     position: relative;
+    padding-left: 1rem;
 }
 .search-input{
     width: 100%;
@@ -95,7 +96,7 @@
 }
 .search-button{
     position: absolute;
-    left: 18rem;
+    left: 19rem;
     background: transparent;
     color: white;
     border: none;

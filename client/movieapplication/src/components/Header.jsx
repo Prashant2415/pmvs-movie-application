@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "../images/logo.png"
 import "../index.css"
+import { Link } from 'react-router-dom';
 const Header = () => {
     const headerData = [
         {
@@ -28,7 +29,7 @@ const Header = () => {
         {
             headerData.map((hd,index)=>{
                 return(
-                    <a className='header-links' target='_self' href={hd.headerLink} key={hd.id} aria-label={`Header menu ${hd.headerTitle}`}>{hd.headerTitle}</a>
+                    <Link className='header-links' to={hd.headerLink} aria-label={`Header menu ${hd.headerTitle}`}>{hd.headerTitle}</Link>
                 )
             })
         }
